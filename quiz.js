@@ -15,16 +15,16 @@ form.addEventListener("submit", e =>{
     });
     let vrijednost = 0;
     let procenat = score/Tacni_odgovori.length*100;
-        console.log(procenat);
-        scrollTo(0,0);
+    console.log(procenat);
+    scrollTo(0,0);
     const timer = setInterval(() => {
-        Procenat.textContent = `${vrijednost}%`;
-        if (vrijednost === procenat){
-            clearInterval(timer);
-        }
-        vrijednost++;
+            Procenat.textContent = `${vrijednost}%`;
+            if (vrijednost === procenat){
+                clearInterval(timer);
+            }
+            vrijednost++;
         }, 15
     )
 
-        Rezultat.classList.remove("d-none");
+    Rezultat.classList.remove("d-none");
 })
